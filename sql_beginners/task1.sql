@@ -47,7 +47,7 @@ where JOB = 'SALESMAN' and
 DEPTNO = 30 and
 COMM > SAL/2;
 
---3.  Display EMPNO, ENAME & MGR of those Employees who donít have manager to report.
+--3.  Display EMPNO, ENAME & MGR of those Employees who don‚Äôt have manager to report.
 select EMPNO,ENAME,MGR from EMP
 where MGR IS NULL;
 
@@ -63,7 +63,7 @@ SELECT LEFT(ENAME, CEILING( LEN(ENAME)/2.0 )) + LOWER( RIGHT(ENAME, LEN(ENAME)/2
 
 SELECT LEFT (ENAME, CEILING (LEN (ENAME)/2.0)) + LOWER(RIGHT (ENAME, CEILING (LEN (ENAME)/2))) FROM EMP
 
---6. Display all Employees whose name contains 3rd Character as ëLí.
+--6. Display all Employees whose name contains 3rd Character as ‚ÄòL‚Äô.
 SELECT ENAME FROM EMP
 WHERE ENAME LIKE '__L%';
 
@@ -87,8 +87,8 @@ WHERE DATEPART(DW,HIREDATE) > ROUND(7/2.0,0);
 
 SELECT * FROM EMP WHERE DATEPART(DW,HIREDATE)>4
 
---10. Display ENAME, DEPTNO, SAL and INCREMENT the Salary with different %ís 
---    on category of Dept No 10 ñ 20%, Dept no 20 ñ 18%, Dept no 30 ñ 15%
+--10. Display ENAME, DEPTNO, SAL and INCREMENT the Salary with different %‚Äôs 
+--    on category of Dept No 10 ‚Äì 20%, Dept no 20 ‚Äì 18%, Dept no 30 ‚Äì 15%
 SELECT ENAME, DEPTNO, SAL,
 CASE DEPTNO
 	WHEN 10 THEN SAL + SAL*0.2
@@ -118,8 +118,8 @@ JOIN DEPT D ON E.DEPTNO = D.DEPTNO
 JOIN SALGRADE S ON E.SAL BETWEEN S.LOSAL AND S.HISAL
 
 --14. Display ENAME, JOB, SAL, COMM, DEPTNO, DNAME, LOC & GRADE of all those Employees
---	  who are working at ìACCOUNTING, SALESî and they have managers to report and 
---	  they donít earn commission and their Salary more than 1000, arrange the data in ascending order.
+--	  who are working at ‚ÄúACCOUNTING, SALES‚Äù and they have managers to report and 
+--	  they don‚Äôt earn commission and their Salary more than 1000, arrange the data in ascending order.
 SELECT E.ENAME, E.JOB, E.SAL, E.COMM, E.DEPTNO, D.DNAME, D.LOC FROM EMP E
 JOIN DEPT D ON E.DEPTNO = D.DEPTNO
 WHERE DNAME IN ('ACCOUNTING','SALES') 
