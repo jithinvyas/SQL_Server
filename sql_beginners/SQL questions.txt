@@ -1,0 +1,49 @@
+What is the difference between SQL and MySQL?
+
+How do you create, update, and delete a table in SQL?
+
+What are the types of SQL queries and commands?
+
+What are the differences between DDL, DML, DCL, and TCL in SQL?
+
+What are the differences between primary key, foreign key, unique key, and composite key in SQL?
+
+What are the types of SQL joins and how do you use them?
+
+What are the differences between inner join, left join, right join, and full join in SQL?
+
+What are the differences between UNION and UNION ALL in SQL?
+
+What are the differences between WHERE and HAVING clauses in SQL?
+
+What are the differences between GROUP BY and ORDER BY clauses in SQL?
+
+What are the differences between aggregate and scalar functions in SQL?
+
+What are some examples of built-in and user-defined functions in SQL?
+
+What are subqueries and how do you use them in SQL?
+
+What are the differences between nested and correlated subqueries in SQL?
+
+How do you find the nth highest value in a column in SQL?
+
+What are indexes and how do you create and use them in SQL?
+
+What are the benefits and drawbacks of using indexes in SQL?
+
+What are the types of SQL constraints and how do you use them?
+
+What are the differences between normalization and denormalization in SQL?
+
+What are the normal forms and how do you apply them in SQL?
+
+What are the differences between DELETE, TRUNCATE, and DROP statements in SQL?
+
+How do you use transactions and locks in SQL?
+
+What are the ACID properties of transactions in SQL?
+
+What are the types of SQL triggers and how do you use them?
+
+What are the types of SQL views and how do you use them?
