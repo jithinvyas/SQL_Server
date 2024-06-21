@@ -11,11 +11,18 @@ values
 select * from tbl_paths
 
 -- 3. Query to seperate file_names from the path
-select *, reverse(substring(reverse(path), charindex('/',reverse(path))+1, len(path))) as Folders,
-			reverse(left(reverse(path), charindex('/',reverse(path))-1 )) as FileNames from tbl_paths
+select *,
+	reverse(substring(reverse(path), 
+			  charindex('/', reverse(path))+ 1,
+			  charindex('/', reverse(path),
+					 charindex('/',reverse(path))+1 ) - charindex('/',reverse(path))-1
+	)) as folderName,
 
--- 4. Split after '@'
-SELECT SUBSTRING('jithinvyas2001@gmail.com',16,8) SUBSTR
+	reverse(substring(reverse(path), 
+			  0,
+			  charindex('/',reverse(path))
+	)) as fileName
+from tbl_paths
 
 -- 4. Query to find the no. of times the given letter is repeated in the City table
 select City,len(City) - len(replace(City,'e','')) as lengt from tblCity
